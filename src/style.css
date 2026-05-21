@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --background: #0e0e0e;
+    --primary: #ba9eff;
+    --primary-dim: #8455ef;
+    --surface-low: #131313;
+    --surface-high: #201f1f;
+    --on-surface: #ffffff;
+    --on-surface-variant: #adaaaa;
+    --outline-variant: rgba(73, 72, 71, 0.2);
+    --font-sans: "Inter", sans-serif;
+    --font-display: "Space Grotesk", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--on-surface);
+    font-family: var(--font-sans);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+.bg-surface-low {
+    background-color: var(--surface-low) !important;
+}
+.bg-surface-high {
+    background-color: var(--surface-high) !important;
+}
+.text-on-surface-variant {
+    color: var(--on-surface-variant) !important;
+}
+
+.grid-pattern {
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(186, 158, 255, 0.05) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            to bottom,
+            rgba(186, 158, 255, 0.05) 1px,
+            transparent 1px
+        );
+}
+
+.btn-brutal {
+    border-radius: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-brutal {
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+}
+
+.btn-primary-brutal:hover {
+    background-color: var(--primary-dim);
+    color: var(--background);
+}
+
+.btn-outline-brutal {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--outline-variant);
+}
+
+.btn-outline-brutal:hover {
+    background-color: var(--surface-high);
+    color: var(--primary);
+}
+
+a.contact-link {
+    transition: color 0.2s ease;
+}
+
+a.contact-link:hover {
+    color: var(--primary-dim) !important;
+}
+
+.navbar-brutal {
+    background-color: rgba(14, 14, 14, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--outline-variant);
+}
+
+.nav-link-brutal {
+    position: relative; /* Required for z-index to work */
+    z-index: 1; /* Ensures the text stays on top of the background */
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.7rem;
+    color: var(--bs-light) !important;
+}
+
+.project-card {
+    background-color: var(--surface-low);
+    border: 1px solid var(--outline-variant);
+    transition: all 0.3s ease;
+    cursor: help;
+}
+
+.project-card:hover {
+    border-color: rgba(186, 158, 255, 0.5);
+}
+
+.project-img-container {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background-color: var(--surface-low);
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transform: scale(0.95);
+    transition: all 0.7s ease;
+}
+
+.project-card:hover .project-img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.tag {
+    padding: 4px;
+    background-color: rgba(14, 14, 14, 0.9);
+    backdrop-filter: blur(10px);
+    font-size: 0.6rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border: 2px solid var(--surface-high);
+    border-radius: 6px;
+    opacity: 0.6;
+}
+
+.about-card {
+    padding: 2.5rem;
+    background-color: var(--surface-low);
+    border: 1px solid var(--outline-variant);
+    transition: all 0.3s ease;
+
+    & > h4 {
+        margin-block: 1rem;
+    }
+}
+
+.about-card:hover {
+    border-color: rgba(186, 158, 255, 0.5);
+}
+
+.about-card:hover .icon-container {
+    transform: scale(1.1);
+}
+
+.icon-container {
+    color: var(--primary);
+    transition: transform 0.3s ease;
+
+    & > i {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.scale-120 {
+    scale: 120%;
+}
+
+.scale-200 {
+    scale: 200%;
+}
+
+.logo-group {
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    & .logo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: content-box;
+        width: 24px;
+        height: 24px;
+        background-color: var(--bs-light, #f8f9fa);
+        border: 2px solid var(--bs-light, #f8f9fa);
+        border-radius: var(--bs-border-radius-sm, 0.25rem);
+        overflow: hidden;
+        transition: transform 0.2s ease;
+
+        &:hover {
+            transform: scale(94%);
+        }
+    }
+
+    & img {
+        max-width: 24px;
+        max-height: 24px;
+        object-fit: cover;
+    }
+}
+
+.connect-card {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 2.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.connect-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--background);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.5rem;
+    transition: border-color 0.3s ease;
+
+    & > svg {
+        transition: transform 0.3s ease;
+    }
+}
+
+.connect-link:hover {
+    border-color: var(--background);
+    color: var(--background);
+
+    & > svg {
+        transform: translateX(30%);
+    }
+}
+
+.contact-form-container {
+    background-color: var(--background);
+    padding: 3rem;
+    border: 1px solid var(--outline-variant);
+}
+
+.form-control-brutal {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--outline-variant);
+    border-radius: 0;
+    color: var(--on-surface);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+    transition: border-color 0.3s ease;
+
+    &::placeholder {
+        color: var(--bs-dark-text-emphasis);
+    }
+
+    &:hover {
+        border-color: var(--bs-dark-text-emphasis);
+    }
+}
+
+.form-control-brutal:focus {
+    background-color: transparent;
+    box-shadow: none;
+    border-color: var(--primary);
+    color: var(--on-surface);
+}
+
+.form-label-brutal {
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: var(--on-surface-variant);
+    margin-bottom: 0.75rem;
+}
+
+.footer-brutal {
+    border-top: 1px solid var(--outline-variant);
+    padding: 4rem 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--surface-high);
+    border: 2px solid var(--background);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+.portrait-container {
+    position: relative;
+    border: 1px solid var(--outline-variant);
+    padding: 1rem;
+}
+
+.portrait-corner-tr {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 4rem;
+    height: 4rem;
+    border-top: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+}
+
+.portrait-corner-bl {
+    position: absolute;
+    bottom: -1rem;
+    left: -1rem;
+    width: 4rem;
+    height: 4rem;
+    border-bottom: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+}
+
+.bg-text-tlev {
+    position: absolute;
+    bottom: -5rem;
+    right: -5rem;
+    font-size: 25rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    opacity: 0.03;
+    pointer-events: none;
+    user-select: none;
+}
+
+#landing > div:first-child {
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.text-small {
+    font-size: 0.6rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+.extra-tags {
+    font-size: 0.65rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > span {
+        padding: 4px;
+        border: 2px solid var(--surface-high);
+        border-radius: 6px;
+    }
+}
+
+.project-card details {
+    display: none;
+}
+
+.description-large {
+    font-size: 16px !important;
+}
+
+.max-w-700 {
+    max-width: 700px;
+}
+
+.max-w-400 {
+    max-width: 400px;
+}
+
+.square-80px {
+    width: 80px;
+    height: 80px;
+}
+
+.text-60crem {
+    font-size: 0.6rem;
+}
+
+.text-65crem {
+    font-size: 0.65rem;
+}
+
+.text-75crem {
+    font-size: 0.75rem;
+}
+
+.ls-40crem {
+    letter-spacing: 0.4rem;
+}
+
+.ls-30cem {
+    letter-spacing: 0.3em;
+}
+
+.hover-bg {
+    left: -20%;
+    width: 140%;
+    z-index: 0; /* Sits underneath the link text */
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+    background-color: var(--primary-dim);
+}
+
+.nav-item:hover .hover-bg {
+    opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+    .project-card .description-large {
+        display: none;
+    }
+
+    .project-card details {
+        display: block;
+        font-size: 16px !important;
+    }
+
+    .project-card summary {
+        display: inline-block;
+        width: 100%;
+        &::after {
+            content: "...";
+        }
+        &::marker {
+            display: none;
+        }
+    }
+
+    .project-card details[open] summary {
+        display: inline;
+        width: fit-content;
+        float: inline-start;
+        text-decoration: underline;
+        &::after {
+            content: " ";
+            white-space: pre;
+        }
+    }
+}
