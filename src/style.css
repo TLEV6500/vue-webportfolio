@@ -402,7 +402,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
 
-    & > span {
+    & > .tag {
         padding: 4px;
         border: 2px solid var(--surface-high);
         border-radius: 6px;
@@ -493,5 +493,15 @@ h1 {
             content: " ";
             white-space: pre;
         }
+    }
+}
+
+.transition-color {
+    transition: color 0.3s ease-out;
+    color: var(--on-surface-variant);
+}
+.transition-parent:has(.transition-color):hover {
+    & .transition-color {
+        color: var(--primary);
     }
 }

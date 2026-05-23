@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import tlevLogo from "../assets/tlev-logo.png";
+</script>
 
 <template>
     <nav
@@ -10,7 +12,7 @@
                 href="#"
             >
                 <div class="logo-group d-inline-block">
-                    <img src="/assets/tlev-logo.png" alt="Logo" />
+                    <img :src="tlevLogo" alt="Logo" />
                 </div>
                 <h1 class="text-light d-inline-block">TLEV</h1>
             </a>
