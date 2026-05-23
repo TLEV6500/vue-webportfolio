@@ -8,6 +8,8 @@ import Index from "./routes/Index.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 
+import { VueReCaptcha } from "vue-recaptcha-v3";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
@@ -53,9 +55,16 @@ const router = createRouter({
 });
 
 const app = createApp(App);
+
+app.component("font-awesome-icon", FontAwesomeIcon);
 app.use(router);
 
-/* 5. Register the component globally so you can use it anywhere */
-app.component("font-awesome-icon", FontAwesomeIcon);
+app.use(VueReCaptcha, {
+    siteKey: "6LdW3PgsAAAAAF30sllT24bvt0rgSc5tpRKEDinh",
+    loaderOptions: {
+        useRecaptchaNet: true,
+        autoHideBadge: true,
+    },
+});
 
 app.mount("#app");
