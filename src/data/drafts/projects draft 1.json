@@ -92,5 +92,65 @@
             "API INTEGRATION"
         ],
         "url": "project6Route"
+    },
+    {
+        "id": 7,
+        "title": "Short Course 1: MySQL",
+        "image": "project-thumbnail-short-course-mysql.png",
+        "alt": "Short Course 1: MySQL",
+        "description": "A MySQL Capstone Project for the Java Back-End Short Course Package",
+        "summary": "A MySQL Capstone Project for the Java Back-End Short Course Package",
+        "details": "",
+        "categories": ["MYSQL", "JAVA", "JDBC", "DOCKER", "GIT"],
+        "technologies": [
+            "BACK-END DEVELOPMENT",
+            "DATABASE DESIGN",
+            "DATA MODELING",
+            "QUERY OPTIMIZATION",
+            "CAPSTONE PROJECT"
+        ],
+        "url": "project7Route"
+    },
+    {
+        "id": 8,
+        "title": "Short Course 2: Java",
+        "image": "project-thumbnail-short-course-java.png",
+        "alt": "Short Course 2: Java",
+        "description": "A Java Capstone Project for the Java Back-End Short Course Package",
+        "summary": "A Java Capstone Project for the Java Back-End Short Course Package",
+        "details": "",
+        "categories": ["JAVA", "MAVEN", "JUNIT", "GIT", "DOCKER"],
+        "technologies": [
+            "BACK-END DEVELOPMENT",
+            "OOP (OBJECT-ORIENTED)",
+            "SOLID PRINCIPLES",
+            "TEST-DRIVEN DEVELOPMENT",
+            "CAPSTONE PROJECT"
+        ],
+        "url": "project8Route"
+    },
+    {
+        "id": 9,
+        "title": "Short Course 3: Spring Boot",
+        "image": "project-thumbnail-short-course-springboot.png",
+        "alt": "Short Course 3: SpringBoot",
+        "description": "A Spring Boot Capstone Project for the Java Back-End Short Course Package",
+        "summary": "A Spring Boot Capstone Project for the Java Back-End Short Course Package",
+        "details": "",
+        "categories": [
+            "SPRING BOOT",
+            "SPRING DATA JPA",
+            "SPRING SECURITY",
+            "JAVA",
+            "MYSQL"
+        ],
+        "technologies": [
+            "BACK-END DEVELOPMENT",
+            "REST API DESIGN",
+            "MVC ARCHITECTURE",
+            "AUTH & AUTHORIZATION",
+            "CAPSTONE PROJECT"
+        ],
+        "url": "project9Route"
     }
 ]

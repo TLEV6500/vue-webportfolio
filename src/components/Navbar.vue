@@ -11,7 +11,7 @@ import tlevLogo from "../assets/tlev-logo.png";
                 class="navbar-brand text-white font-display fw-bold tracking-tighter fs-2"
                 href="#"
             >
-                <div class="logo-group d-inline-block">
+                <div class="logo-group d-inline-block pe-2">
                     <img :src="tlevLogo" alt="Logo" />
                 </div>
                 <h1 class="text-light d-inline-block">TLEV</h1>
@@ -63,11 +63,13 @@ import tlevLogo from "../assets/tlev-logo.png";
                     </li>
                 </ul>
             </div>
-            <button
+            <a
+                href="https://www.linkedin.com/in/tim-leobert-villacin-2484b0226/"
                 class="btn btn-primary-brutal rounded-0 d-none d-md-block px-4 py-2 fs-6"
             >
                 Connect
-            </button>
+                <font-awesome-icon icon="fa-brands fa-linkedin" />
+            </a>
         </div>
     </nav>
 </template>
