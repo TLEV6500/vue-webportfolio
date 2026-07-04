@@ -1,10 +1,7 @@
 <script setup>
-import { RouterLink } from "vue-router";
-
-// Adjust this path based on where you saved projects.json
 import projectsData from "../data/projects.json";
+import SmartLink from "./SmartLink.vue";
 
-// This helper function allows Vite to correctly bundle dynamic image paths
 const getImageUrl = (imageName) => {
     return new URL(`../assets/${imageName}`, import.meta.url).href;
 };
@@ -61,7 +58,7 @@ const appendToBaseUrl = (url) => {
                             <h3
                                 class="fs-2 mb-3 d-flex justify-content-between align-items-center transition-color"
                             >
-                                <RouterLink
+                                <SmartLink
                                     :to="project.url"
                                     class="text-reset text-decoration-none"
                                 >
@@ -69,7 +66,7 @@ const appendToBaseUrl = (url) => {
                                     <font-awesome-icon
                                         icon="fa-solid fa-square-arrow-up-right"
                                     />
-                                </RouterLink>
+                                </SmartLink>
                             </h3>
                             <p
                                 class="description-large text-on-surface-variant fs-5 mb-4"

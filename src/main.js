@@ -46,6 +46,17 @@ library.add(
 
 const routes = [
     { path: "/", component: Index },
+    // {
+    //     path: "/projects",
+    //     redirect: "/",
+    //     children: [
+    //         {
+    //             path: ":id",
+    //             component: ProjectDetail,
+    //             props: true,
+    //         },
+    //     ],
+    // },
     { path: "/:pathMatch(.*)*", component: ComingSoon },
 ];
 

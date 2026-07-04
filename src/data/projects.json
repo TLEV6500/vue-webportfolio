@@ -1,96 +1,86 @@
 [
     {
         "id": 1,
-        "title": "E-commerce API Documentation",
-        "image": "project-thumbnail-e-commerce-api.png",
-        "alt": "E-commerce API Documentation",
-        "description": "Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published using Postman.",
-        "summary": "Dynamic E-Commerce Workflow Management.",
-        "details": "The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published using Postman.",
-        "categories": ["ExpressJS", "AWS", "Postman"],
-        "technologies": ["E-commerce", "API", "Documentation"],
-        "url": "project1Route"
+        "title": "Fitness API",
+        "image": "project-thumbnail-fitness-api.png",
+        "alt": "Fitness API Documentation thumbnail",
+        "description": "RESTful Fitness Data Management API. The server features secure JWT authentication, bcrypt password hashing, and seamless data management for user fitness metrics. Built with an Express.js backend and integrated with MongoDB via Mongoose for structured, cross-origin data access.",
+        "summary": "RESTful Fitness Data Management API.",
+        "details": "The server features secure JWT authentication, bcrypt password hashing, and seamless data management for user fitness metrics. Built with an Express.js backend and integrated with MongoDB via Mongoose for structured, cross-origin data access.",
+        "categories": ["EXPRESSJS", "MONGODB", "NODEJS", "JWT"],
+        "technologies": [
+            "BACK-END DEVELOPMENT",
+            "API DESIGN",
+            "DATABASE MANAGEMENT",
+            "USER AUTHENTICATION",
+            "SECURITY"
+        ],
+        "url": "https://github.com/TLEV6500/fitnessAPI-villacin"
     },
     {
         "id": 2,
-        "title": "Course Booking API Documentation",
-        "image": "project-thumbnail-course-booking-api.png",
-        "alt": "course booking api thumbnail",
-        "description": "RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documentation using Postman.",
-        "summary": "RESTful API for managing course enrollments,",
-        "details": "featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documentation using Postman.",
-        "categories": ["ExpressJS", "AWS", "Postman"],
-        "technologies": ["Course Management", "REST API", "Documentation"],
-        "url": "project2Route"
+        "title": "Fitness APP",
+        "image": "project-thumbnail-fitness-app.png",
+        "alt": "Fitness APP thumbnail",
+        "description": "MEVN Fitness Client-Side Platform. A responsive client-side web application built with Vue 3, Vite, and Bootstrap 5. The platform leverages Vue Router for seamless client-side navigation, allowing users to securely log in, register, and manage their fitness journeys interactively.",
+        "summary": "MEVN Fitness Client-Side Platform.",
+        "details": "A responsive client-side web application built with Vue 3, Vite, and Bootstrap 5. The platform leverages Vue Router for seamless client-side navigation, allowing users to securely log in, register, and manage their fitness journeys interactively.",
+        "categories": [
+            "VUEJS",
+            "JAVASCRIPT",
+            "BOOTSTRAP",
+            "NODEJS",
+            "VUEROUTER"
+        ],
+        "technologies": [
+            "FRONTEND DEVELOPMENT",
+            "SPA ARCHITECTURE",
+            "UI-UX DESIGN",
+            "CLIENT-SIDE ROUTING",
+            "RESPONSIVE DESIGN"
+        ],
+        "url": "https://github.com/TLEV6500/fitnessAPP-villacin"
     },
     {
         "id": 3,
-        "title": "Course booking app",
-        "image": "project-thumbnail-course-booking-app.png",
-        "alt": "Course booking app",
-        "description": "A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.",
-        "summary": "A MERN-stack course enrollment system",
-        "details": "featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.",
-        "categories": ["MongoDB", "ExpressJS", "ReactJS", "NextJS", "AWS"],
+        "title": "Course Booking API",
+        "image": "project-thumbnail-course-booking-api.png",
+        "alt": "Course Booking API thumbnail",
+        "description": "Type-Safe Modular Backend Service. A TypeScript-first Express.js API designed with a service-layer architecture, endpoint-based routing, JWT authentication, and RBAC middleware. Features rigorous end-to-end data validation utilizing Zod, OpenAPI, and Jest integration testing.",
+        "summary": "Type-Safe Modular Backend Service.",
+        "details": "A TypeScript-first Express.js API designed with a service-layer architecture, endpoint-based routing, JWT authentication, and RBAC middleware. Features rigorous end-to-end data validation utilizing Zod, OpenAPI, and Jest integration testing.",
+        "categories": ["TYPESCRIPT", "EXPRESSJS", "MONGODB", "ZOD", "OPENAPI"],
         "technologies": [
-            "Frontend Development",
-            "Full-Stack Development",
-            "UI-UX Design"
+            "BACK-END ENGINEERING",
+            "API VALIDATION",
+            "ROLE-BASED ACCESS CONTROL",
+            "INTEGRATION TESTING",
+            "CONTAINERIZATION"
         ],
-        "url": "project3Route"
+        "url": "https://github.com/TLEV6500/fullstack-course-booking-app"
     },
     {
         "id": 4,
-        "title": "E-commerce App",
-        "image": "project-thumbnail-e-commerce-app.png",
-        "alt": "E-commerce App thumbnail",
-        "description": "MERN E-Commerce Platform. The platform features dynamic product catalog filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.",
-        "summary": "MERN E-Commerce Platform.",
-        "details": "The platform features dynamic product catalog filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.",
-        "categories": ["MONGODB", "EXPRESSJS", "REACTJS", "NODEJS", "REDUX"],
-        "technologies": [
-            "FULL-STACK DEVELOPMENT",
-            "E-COMMERCE SYSTEM",
-            "ADMIN DASHBOARD",
-            "REAL-TIME ANALYTICS",
-            "UI-UX DESIGN"
+        "title": "Course Booking App",
+        "image": "project-thumbnail-course-booking-app.png",
+        "alt": "Course Booking App thumbnail",
+        "description": "Monorepo Course Enrollment Platform. A dynamic Vue.js frontend engineered within a high-performance Turborepo monorepo structure. Utilizes Pinia for state management and TailwindCSS for responsive styling, enforcing shared schema contracts for type-safe frontend-backend synchronization.",
+        "summary": "Monorepo Course Enrollment Platform.",
+        "details": "A dynamic Vue.js frontend engineered within a high-performance Turborepo monorepo structure. Utilizes Pinia for state management and TailwindCSS for responsive styling, enforcing shared schema contracts via Zod for type-safe frontend-backend synchronization.",
+        "categories": [
+            "VUEJS",
+            "TYPESCRIPT",
+            "PINIA",
+            "TAILWINDCSS",
+            "TURBOREPO"
         ],
-        "url": "project4Route"
-    },
-    {
-        "id": 5,
-        "title": "Airline Booking System Mockup",
-        "image": "project-thumbnail-airplane-booking-mockup.png",
-        "alt": "Airline Booking System Mockup",
-        "description": "Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.",
-        "summary": "Side Project: Conceptual design showcasing",
-        "details": "an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.",
-        "categories": ["FIGMA", "ADOBE XD", "SKETCH", "CANVA", "FRAMER"],
         "technologies": [
-            "UI-UX DESIGN",
-            "CONCEPTUAL DESIGN",
-            "WIREFRAMING",
-            "INTERACTION DESIGN",
-            "USER FLOW"
+            "FRONTEND DEVELOPMENT",
+            "MONOREPO ARCHITECTURE",
+            "TYPE SAFETY",
+            "STATE MANAGEMENT",
+            "DEV-OPS"
         ],
-        "url": "project5Route"
-    },
-    {
-        "id": 6,
-        "title": "Airline Booking System Prototype",
-        "image": "project-thumbnail-airplane-booking-prototype.png",
-        "alt": "Airline Booking System Prototype",
-        "description": "Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.",
-        "summary": "Side Project: Interactive prototype simulating",
-        "details": "end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.",
-        "categories": ["REACTJS", "NODEJS", "MONGODB", "STRIPE", "AWS"],
-        "technologies": [
-            "FULL-STACK DEVELOPMENT",
-            "INTERACTIVE PROTOTYPE",
-            "BOOKING SYSTEM",
-            "PAYMENT PROCESSING",
-            "API INTEGRATION"
-        ],
-        "url": "project6Route"
+        "url": "https://github.com/TLEV6500/fullstack-course-booking-app"
     }
 ]
