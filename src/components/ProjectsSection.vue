@@ -26,8 +26,8 @@ const appendToBaseUrl = (url) => {
                         Here’s what I’m up to...
                     </h2>
                 </div>
-                <RouterLink
-                    to="/projects"
+                <SmartLink
+                    :to="appendToBaseUrl('#projects')"
                     class="text-decoration-none text-primary font-display fw-bold text-uppercase tracking-widest fs-6 d-flex align-items-center gap-2 group"
                 >
                     View all projects
@@ -35,7 +35,7 @@ const appendToBaseUrl = (url) => {
                         icon="fa-solid fa-arrow-right"
                         class="w-4 h-4 transition-transform"
                     />
-                </RouterLink>
+                </SmartLink>
             </div>
 
             <div class="row g-5">
